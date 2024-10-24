@@ -63,8 +63,18 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
     }
 
-
+    /**
+     * this deletes a city object to the list
+     */
     public void deleteCity(City city) {
         cities.remove(city);
+    }
+
+    /**
+     * this checks a city is in the list
+     */
+    public boolean hasCity(City city)
+    {
+        return false;
     }
 }
