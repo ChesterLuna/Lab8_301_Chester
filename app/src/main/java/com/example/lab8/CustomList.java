@@ -77,4 +77,11 @@ public class CustomList extends ArrayAdapter<City> {
     {
         return cities.contains(city);
     }
+
+    /**
+     * return how many cities exist
+     */
+    public int countCities() {
+        return 0;
+    }
 }

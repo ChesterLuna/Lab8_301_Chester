@@ -70,4 +70,26 @@ public class CustomListTest {
         assertTrue(list.hasCity(cityToTest));
     }
 
+    /**
+     * the size should be 0
+     * count cities
+     * check they match
+     * add 3 cities
+     * the size should be 3
+     * count cities
+     * check they match
+     */
+    @Test
+    public void countCityTest(){
+        list = MockCityList();
+        int citiesCount = list.countCities();
+        assertEquals(0,citiesCount);
+        list.addCity(new City("Estevan", "SK"));
+        list.addCity(new City("Hobiton", "Shire"));
+        list.addCity(new City("martinaise", "revachol"));
+        citiesCount = list.countCities();
+        assertEquals(3,citiesCount);
+    }
+
+
 }
